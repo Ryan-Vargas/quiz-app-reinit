@@ -165,14 +165,12 @@ function generateQuizFeedback() {
 }
 
 function generateQuizCount() {
-  // current question, total questions, and total questions right
   return `<h3>Question ${store.questionNumber + 1}/${store.questions.length}. ${
     store.score
   } correct.</h3>`;
 }
 
 function generateTitleScreen() {
-  //generate our title screen and restart
   return `<section class = "js-main-screen">
               <h2 class = "center-text">Test your Risk of Rain knowledge with this quiz!</h2> 
               <button type="submit" class = "js-start-button">Start!</button>
@@ -180,7 +178,6 @@ function generateTitleScreen() {
 }
 
 function generateEndScreen() {
-  // generate our quiz results
   return `<section class="js-main-screen">
             <div class="results-container">
               <h2 class="js-results-text">Your Results</h2>
